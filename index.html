@@ -12,7 +12,7 @@
 
   <span style="font-size: 16px"><sup>1</sup> Google Research &nbsp;&nbsp;<sup>2</sup> Tel Aviv University
   </span></p>
-  <br><img src="./files/mix_teaser.png" class="teaser-img" style="width:70%;"><br>
+  <br><img src="./files/mix_teaser.jpeg" class="teaser-img" style="width:60%;"><br>
 
   <font size="+2">
     <p style="text-align: center;">
@@ -31,5 +31,31 @@
     We conduct a series of extensive experiments to analyze and understand the properties of the new space, and to showcase the effectiveness of our method for personalizing text-to-image models. Furthermore, we utilize the unique properties of this space to achieve previously unattainable results in object-style mixing using text-to-image models.
   </p>
 
+  <div>
+    <img class="summary-img" src="./files/p_pp_sbs.jpeg" style="width:50%;">
+    <i>Standard textual conditioning, where a single text embedding is injected to the network (left), vs. our proposed extended conditioning, where different embeddings are injected into different layers of the U-net (right).</i>
+  </div> 
   <br>
+</div>
+
+<div class="content">
+    <h2>Improved Concept Inversion</h2>
+    <div>
+        <img class="summary-img" src="./files/inversion_examples.jpeg" style="width:90%;">
+    </div> 
+    <p>
+    Textual Inversion (TI) vs. Extended Textual Inversion (XTI).
+    Column 1: Original concepts. Column 2: TI results. Column 3: XTI results. It can be seen that XTI exhibits superior subject and prompt fidelity, as corroborated by the results of our user study.
+    </p>
+    <br>
+</div>
+
+<div class="content">
+    <h2>Style Mixing</h2>
+    We can mix geometry and appearance by passing different subjects inversions to coarse and fine layers of the diffusion denoising U-net.
+    <div>
+        <img class="summary-img" src="./files/mix_samples.jpeg" style="width:90%;">
+    </div> 
+    <i> Geometry-style mixing with a shape taken from first column, and style from top row</i>
+    <br>
 </div>
