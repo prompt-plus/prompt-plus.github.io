@@ -12,10 +12,14 @@
 
   <span style="font-size: 16px"><sup>1</sup> Google Research &nbsp;&nbsp;<sup>2</sup> Tel Aviv University
   </span></p>
-  <br><img src="./files/mix_teaser.jpeg" class="teaser-img" style="width:60%;"><br>
+  <!-- <br><img src="./files/mix_teaser.jpeg" class="teaser-img" style="width:60%;"><br> -->
+      <img class="summary-img" src="./files/p_pp_sbs.jpeg" style="width:50%;">
+    <br>
+    <div class="img-legend"><b>P vs. P+.</b> Standard textual conditioning, where a single text embedding is injected to the network (left), vs. our proposed extended conditioning, where different embeddings are injected into different layers of the U-net (right).</div>
 
   <font size="+2">
     <p style="text-align: center;">
+
       <a href="./files/PromptPlus.pdf" target="_blank">Paper</a> &nbsp;&nbsp;&nbsp;&nbsp;
     </p>
   </font>
@@ -32,23 +36,28 @@
   </p>
 
   <div>
-    <img class="summary-img" src="./files/p_pp_sbs.jpeg" style="width:50%;">
-    <br>
-    <div class="img-legend">Standard textual conditioning, where a single text embedding is injected to the network (left), vs. our proposed extended conditioning, where different embeddings are injected into different layers of the U-net (right).</div>
+
   </div> 
   <br>
 </div>
 
 <div class="content">
-    <h2>Improved Concept Inversion</h2>
+    <h2>Background</h2>
+    <div>
+        <img class="summary-img" src="./files/swap.jpeg" style="width:60%;">
+    </div> 
+    <div class="img-legend"><b>Per-layer Prompting.</b> We provide different text prompts (a precursor to $\PromptP$) to different cross-attention layers in the denoising U-net. We see that color "red", "green" is determined by the fine outer layers and content "cube", "lizard" is determined by the coarse inner layers..</div>
+    <br>
+</div>
+
+<div class="content">
+    <h2>Extended Textual Inversion</h2>
     <div>
         <img class="summary-img" src="./files/inversion_examples.jpeg" style="width:90%;">
     </div> 
-    <p>
-    Textual Inversion (TI) vs. Extended Textual Inversion (XTI).
-    Column 1: Original concepts. Column 2: TI results. Column 3: XTI results. It can be seen that XTI exhibits superior subject and prompt fidelity, as corroborated by the results of our user study.
+      <br>
+        <b>Textual Inversion (TI) vs. Extended Textual Inversion (XTI).</b> Column 1: Original concepts. Column 2: TI results. Column 3: XTI results. It can be seen that XTI exhibits superior subject and prompt fidelity, as corroborated by the results of our user study.
     XTI also signifficantly improves all concept inversion metrics in both standard and data-hungry setup.
-    </p>
     <br>
 </div>
 
