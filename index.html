@@ -42,7 +42,7 @@
 </div>
 
 <div class="content">
-    <h2>Background</h2>
+    <h2>Motivation</h2>
     To motivate this work we demostrate a simple experiment on the Stable Diffusion model to explore how conditioning prompts affect different subsets of cross-attention layers in the denoising U-net. By injecting "red cube" and "green lizard" prompts into separate subsets of layers, we generated images of a red lizard and a green cube. Our experiment suggests that prompts are processed differently at different resolutions. With this in mind, our work aims to further explore this phenomena and its potential applications.
     <br>
     <br>
@@ -52,6 +52,16 @@
     <br>
     <div class="img-legend"><b>Per-layer Prompting.</b> We provide different text prompts to different cross-attention layers in the denoising U-net. We see that color "red", "green" is determined by the fine outer layers and content "cube", "lizard" is determined by the coarse inner layers.</div>
     
+</div>
+
+<div class="content">
+    <h2>P+ Analisys</h2>
+    <div>
+        <img class="summary-img" src="./files/mix_scheme_imgs.jpeg" style="width:90%;">
+    </div> 
+      <br>
+        Visualization of mixed conditioning of the U-net cross-attention layers. The rows represent two different starting seeds and the columns represent eight growing subsets of layers, from coarse to fine. We start by conditioning all layers on "Blue car, impressionism" in the left column. As we move right, we gradually condition more layers on "Red house, graffiti", starting with the innermost coarse layers and then the outer fine layers. Note that shape changes ("house") take place once we condition the coarse layers, but appearance ("red") changes only take place after we condition the fine layers.
+    <br>
 </div>
 
 <div class="content">
