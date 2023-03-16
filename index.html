@@ -62,6 +62,12 @@
       <br>
         Visualization of mixed conditioning of the U-net cross-attention layers. The rows represent two different starting seeds and the columns represent eight growing subsets of layers, from coarse to fine. We start by conditioning all layers on "Blue car, impressionism" in the left column. As we move right, we gradually condition more layers on "Red house, graffiti", starting with the innermost coarse layers and then the outer fine layers. Note that shape changes ("house") take place once we condition the coarse layers, but appearance ("red") changes only take place after we condition the fine layers.
     <br>
+    <div>
+        <img class="summary-img" src="./files/properties_scheme.jpeg" style="width:90%;">
+    </div> 
+      <br>
+        Relative CLIP similarities for <em>object</em>, <em>color</em> <em>style</em> attributes, by subset of U-net layers. Orangerepresents the similarity to the first prompt, and blue represents similarity to the second. As we move from left to right, we gradually grow the subset of layers conditioned with the second prompt from coarse to fine.
+    <br>
 </div>
 
 <div class="content">
