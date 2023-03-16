@@ -43,15 +43,19 @@
 
 <div class="content">
     <h2>Background</h2>
+    To motivate this work we demostrate a simple experiment on the Stable Diffusion model to explore how conditioning prompts affect different subsets of cross-attention layers in the denoising U-net. By injecting "red cube" and "green lizard" prompts into separate subsets of layers, we generated images of a red lizard and a green cube. Our experiment suggests that prompts are processed differently at different resolutions. With this in mind, our work aims to further explore this phenomena and its potential applications.
+    <br>
+    <br>
     <div>
         <img class="summary-img" src="./files/swap.jpeg" style="width:60%;">
     </div> 
-    <div class="img-legend"><b>Per-layer Prompting.</b> We provide different text prompts (a precursor to $\PromptP$) to different cross-attention layers in the denoising U-net. We see that color "red", "green" is determined by the fine outer layers and content "cube", "lizard" is determined by the coarse inner layers..</div>
     <br>
+    <div class="img-legend"><b>Per-layer Prompting.</b> We provide different text prompts to different cross-attention layers in the denoising U-net. We see that color "red", "green" is determined by the fine outer layers and content "cube", "lizard" is determined by the coarse inner layers.</div>
+    
 </div>
 
 <div class="content">
-    <h2>Extended Textual Inversion</h2>
+    <h2>Extended Textual Inversion (XTI)</h2>
     <div>
         <img class="summary-img" src="./files/inversion_examples.jpeg" style="width:90%;">
     </div> 
