@@ -43,7 +43,7 @@
 
 <div class="content">
     <h2>Motivation</h2>
-    To motivate this work we demostrate a simple experiment on the Stable Diffusion model to explore how conditioning prompts affect different subsets of cross-attention layers in the denoising U-net. By injecting "red cube" and "green lizard" prompts into separate subsets of layers, we generated images of a red lizard and a green cube. Our experiment suggests that prompts are processed differently at different resolutions. With this in mind, our work aims to further explore this phenomena and its potential applications.
+    To motivate this work we demonstrate a simple experiment on the Stable Diffusion model to explore how conditioning prompts affect different subsets of cross-attention layers in the denoising U-net. By injecting "red cube" and "green lizard" prompts into separate subsets of layers, we generated images of a red lizard and a green cube. Our experiment suggests that prompts are processed differently at different resolutions. With this in mind, our work aims to further explore this phenomena and its potential applications.
     <br>
     <br>
     <div>
@@ -66,7 +66,7 @@
         <img class="summary-img" src="./files/properties_scheme.jpeg" style="width:90%;">
     </div> 
       <br>
-        Relative CLIP similarities for <em>object</em>, <em>color</em> <em>style</em> attributes, by subset of U-net layers. Orangerepresents the similarity to the first prompt, and blue represents similarity to the second. As we move from left to right, we gradually grow the subset of layers conditioned with the second prompt from coarse to fine.
+        Relative CLIP similarities for <em>object</em>, <em>color</em> <em>style</em> attributes, by subset of U-net layers. Orange represents the similarity to the first prompt, and blue represents similarity to the second. As we move from left to right, we gradually grow the subset of layers conditioned with the second prompt from coarse to fine.
     <br>
 </div>
 
@@ -78,13 +78,13 @@
     </div> 
       <br>
         <b>Textual Inversion (TI) vs. Extended Textual Inversion (XTI).</b> Column 1: Original concepts. Column 2: TI results. Column 3: XTI results. It can be seen that XTI exhibits superior subject and prompt fidelity, as corroborated by the results of our user study.
-    XTI also signifficantly improves all concept inversion metrics in both standard and data-hungry setup.
+    XTI also significantly improves all concept inversion metrics in both standard and single-image setup.
     <br>
 </div>
 
 <div class="content">
     <h2>Style Mixing</h2>
-    We can mix geometry and appearance by passing different subjects inversions to coarse and fine layers of the diffusion denoising U-net:
+    We can mix geometry and appearance by passing different subjects' inversions to coarse and fine layers of the diffusion denoising U-net:
     <br>
     <br>
     <div>
